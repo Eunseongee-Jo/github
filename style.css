@@ -1,0 +1,175 @@
+/* 기본 설정: 귀여운 폰트 및 배경 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+body {
+    font-family: 'Nanum Pen Script', cursive; /* 귀여운 손글씨 폰트 */
+    margin: 0;
+    padding: 0;
+    background-color: #ffeef2; /* 부드러운 핑크 배경 */
+    color: #4a4a4a;
+    line-height: 1.5;
+    scroll-behavior: smooth; /* 부드러운 스크롤 효과 */
+}
+
+/* 홈 섹션: 화면 전체를 차지하도록 설정 */
+#home {
+    background-color: #ff9aa2; /* 메인 핑크색 */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 화면 전체 높이 */
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* 반투명 박스 */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 4em;
+    margin-bottom: 5px;
+}
+
+.intro-text {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* 동그란 프로필 사진 */
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+/* 연락처 스타일 */
+.contact-info {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    margin: 0 0 10px 0;
+    color: #fff6e9;
+}
+
+.contact-info a {
+    color: #fff6e9; /* 밝은 색상 */
+    text-decoration: underline;
+}
+
+/* 버튼 스타일 (작품 보러가기) */
+.view-button {
+    display: inline-block;
+    background-color: #fee1c4; /* 노란색 계열 버튼 */
+    color: #ff9aa2; 
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    box-shadow: 0 5px 0 #fec09c; /* 입체적인 효과 */
+}
+
+.view-button:hover {
+    background-color: #ffc48e;
+    transform: translateY(2px);
+    box-shadow: 0 3px 0 #fec09c;
+}
+
+
+/* 갤러리 섹션 */
+.gallery-section {
+    padding: 80px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #ffeef2;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3.5em;
+    color: #ff9aa2;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px #fff;
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.artwork-item {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.artwork-item:hover {
+    transform: translateY(-5px);
+}
+
+.artwork-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 1 / 1; /* 정사각형 이미지 */
+}
+
+.caption {
+    padding: 15px;
+    text-align: center;
+}
+
+.caption h3 {
+    font-size: 1.8em;
+    color: #ff9aa2;
+    margin: 5px 0;
+}
+
+.caption p {
+    font-size: 1.2em;
+    color: #888;
+}
+
+/* 돌아가기 버튼 */
+.back-button {
+    display: block;
+    width: 250px;
+    margin: 50px auto 20px auto;
+    text-align: center;
+    background-color: #ff9aa2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #ff7888;
+}
+
+/* 푸터 */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ff9aa2;
+    color: white;
+    font-size: 1.2em;
+}
